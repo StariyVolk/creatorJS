@@ -33,7 +33,7 @@ function js(jsVar) {
 	return gulp.src(src[jsVar])
 		.pipe(newer(build[jsVar]))
 		.pipe(concat(build[jsVar]))
-		.pipe(gulp.dest("lib/view/js"))
+		.pipe(gulp.dest("."))
 }
 
 //Мини-таски для разных js
