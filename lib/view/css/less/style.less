@@ -1,6 +1,41 @@
-/**
- * Created by vatiba01 on 03.03.2016.
- */
-.style {
+@import "normalize.less";
+@import "mixins.less";
 
+/*** Main Blocks ***/
+html {
+	width: 100%;
+	height: 100%;
+	font-size: 100.01%;
 }
+
+body {
+	font: 14px/1.41 Arial, Geneva, sans-serif;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+}
+
+a {
+	text-decoration: none;
+}
+
+//.container {
+//	width: 1280px;
+//	margin: 0 auto;
+//}
+
+.wrapper {
+	position: relative;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	overflow: hidden;
+	min-width: 320px;
+
+	/*.empty {
+		position: relative;
+		height: 55px;
+	}*/
+}
+
+@import "header.less";
