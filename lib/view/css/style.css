@@ -251,6 +251,12 @@ table {
   -webkit-filter: none;
           filter: none;
 }
+.shadowSmall {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+.shadow {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+}
 /*** Main Blocks ***/
 html {
   width: 100%;
@@ -352,4 +358,83 @@ a {
 }
 .header .nav > li ul li a:hover {
   background: #d9d9d9;
+}
+/**
+ * Created by Verdi on 06.03.2016.
+ */
+.desktop {
+  position: relative;
+  padding-top: 40px;
+}
+.window {
+  float: left;
+  min-width: 320px;
+  margin-bottom: 10px;
+}
+.window_wrap {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  margin: 0 5px;
+  position: relative;
+}
+.window_title {
+  background: #1e5799;
+  background: -webkit-linear-gradient(top, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
+  background: linear-gradient(to bottom, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
+  color: white;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+.window_content {
+  border: 1px solid grey;
+  border-top: 0;
+}
+/**
+ * Created by Verdi on 06.03.2016.
+ */
+.blueGrad {
+  background: #1e5799;
+  background: -webkit-linear-gradient(top, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
+  background: linear-gradient(to bottom, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
+}
+/**
+ * Created by Verdi on 06.03.2016.
+ */
+.proj_structure {
+  padding: 5px 10px;
+}
+.proj_structure ul {
+  list-style: none;
+}
+.proj_structure ul li:before,
+.proj_structure ul li:after {
+  content: "";
+  display: table;
+}
+.proj_structure ul li:after {
+  clear: both;
+}
+.proj_structure ul li ul {
+  display: none;
+  padding-left: 20px;
+}
+.proj_structure_toggle {
+  float: left;
+  position: relative;
+  padding: 0 2px;
+  display: block;
+  margin-bottom: 5px;
+}
+.proj_structure_toggle:after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 2px;
+  bottom: 2px;
+  border: 1px solid grey;
+  content: "";
+}
+.proj_structure_name {
+  margin-left: 20px;
+  display: block;
+  margin-bottom: 5px;
 }

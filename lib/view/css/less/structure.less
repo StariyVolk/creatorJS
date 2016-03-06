@@ -1,0 +1,38 @@
+/**
+ * Created by Verdi on 06.03.2016.
+ */
+
+.proj_structure {
+    padding: 5px 10px;
+    ul {
+        list-style: none;
+        li {
+            .clearfix;
+            ul {
+                display: none;
+                padding-left: 20px;
+            }
+        }
+    }
+}
+.proj_structure_toggle {
+    float: left;
+    position: relative;
+    padding: 0 2px;
+    display: block;
+    margin-bottom: 5px;
+    &:after {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 2px;
+        bottom: 2px;
+        border: 1px solid grey;
+        content: "";
+    }
+}
+.proj_structure_name {
+    margin-left: 20px;
+    display: block;
+    margin-bottom: 5px;
+}
